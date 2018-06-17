@@ -1,5 +1,6 @@
 import json
 
+import os
 from flask import Flask, request
 from core.reader import text_extractor
 from core.nlu import insights
@@ -19,5 +20,7 @@ def analyze():
     return json.dumps(result)
 
 
+port = int(os.getenv('PORT', 8000))
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=port, debug=True)
