@@ -1,0 +1,33 @@
+<section>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="results-success" [ngStyle]="{'display':(resultsError)?'none':'block'}">
+          <h4>{{resultsCount}} Insights Encontrados</h4>
+          <div class="table-responsive">
+            <table id="mytable" class="table table-bordred table-striped">
+              <thead>
+                <th>Nome</th>
+                <th>Valor</th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let result of dados_edital ; let i=index"
+                (click)="setClickedRow(i)" [class.active]="i == selectedRow">
+                  <td>{{result.name}}</td>
+                  <td>{{result.value}}</td>
+                  <td style="display: flex;">
+                    <button class="btn btn-info parents tablodugmeler" style="margin: 4px;" (click)="onCompareClick()">
+                      <span class="fa fa-eye" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-info parents tablodugmeler" style="margin: 4px;" (click)="onMarketClick()">
+                        <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+                      </button>
+                   </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
