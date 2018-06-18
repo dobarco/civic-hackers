@@ -1,17 +1,21 @@
 <header class="intro-header">
-    <div class="container">
-      <div class="intro-message">
-        <h1>Civic Hackers</h1>
-        <!-- <h3>Lorem Ipsum is a very beautiful thing</h3> -->
-        <hr class="intro-divider">
-        <ul class="list-inline intro-social-buttons">
-          <li class="list-inline-item">
-            <span class="network-name">
-              <input type="file" (change)="onFileSelected($event)"/>
-              <button class="btn btn-primary"  (click)="onUpload()">Upload</button>
-            </span>
-          </li>
-        </ul>
+    <div class="index-container">
+        <div class="container">
+          <div class="intro-message">
+            <h1>TEI</h1>
+            <h4>Transparencia, Economicidade e Insights</h4>
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+              <li class="list-inline-item">
+                <span class="network-name">
+                  <input type="file" class="btn btn-secondary button-home" (change)="onFileSelected($event)"/>
+                  <p class="upload">
+                    <a class="btn btn-info" href="./results.html" id="onUpload">Upload</a>
+                  </p>
+                  </span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+</header> 

@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./market.component.css']
 })
 export class MarketComponent implements OnInit {
-
+  chart = [];
   constructor() { }
 
   ngOnInit() {
   }
-
 }

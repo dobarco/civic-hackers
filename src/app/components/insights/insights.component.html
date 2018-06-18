@@ -1,5 +1,20 @@
-<section>
-  <div class="row">
+<section class="insight-section">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Insights Coletados
+        <div class="row comparisson">
+            <div class="col-sm-12">
+                <div class="card">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: left">
+                    </p>
+                    <a href="./compare.html" class="btn btn-primary">Comparar com Proposta</a>
+                    <a href="./market.html" class="btn btn-primary">Validar Preços</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="row insight-row">
     <div class="col-md-12">
       <div class="results-success" [ngStyle]="{'display':(resultsError)?'none':'block'}">
           <h4>{{resultsCount}} Insights Encontrados</h4>

@@ -2,3 +2,19 @@
     background-color: #123456 !important;
     color: white;
   }
+
+.results-success{
+  margin-top:15px;
+  margin-bottom:15px;
+  padding-bottom:15px;
+}
+.insight-row{
+  margin-bottom:12%;
+}
+
+.insight-section{
+  margin:30px;
+  padding:5px;
+  border:0px solid black;
+  color:#000;
+}

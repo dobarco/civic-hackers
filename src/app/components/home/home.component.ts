@@ -26,19 +26,19 @@ export class HomeComponent implements OnInit {
   }
 
   onUpload(){
-    // this.insigths.doSendFile(this.selectedFile).subscribe(data=>{
-    //   console.log(data);
-    // });
-    this.router.navigate(['/insights'],{
-      queryParams:
-      {
-        selectedFile: 'Edital_n1',
-        nome_do_produto: 'Caneta Esferográfica Azul',
-        preco_do_produto1:'2,35',
-        preco_do_produto2:'2,40',
-        preco_do_produto3:'2,70'
-      }
+    this.insigths.doSendFile(this.selectedFile).subscribe(data=>{
+      this.router.navigate(['/insights'],{
+        queryParams:
+        {
+          selectedFile: this.selectedFile,
+          nome_do_produto: data.nome_do_produto,
+          preco_do_produto1: data.preco_do_produto1,
+          preco_do_produto2: data.preco_do_produto2,
+          preco_do_produto3: data.preco_do_produto3
+        }
+      });
     });
+    
   }
 
 }
